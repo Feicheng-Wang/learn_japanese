@@ -15,3 +15,9 @@ fifty_soft['type'] = 'soft'
 fifty_df = pd.concat([fifty_hard, fifty_soft], axis=0)
 fifty_df
 # %%
+fifty_df.reset_index(drop=True, inplace=True)
+# %%
+fifty_df
+# %%
+fifty_df.to_csv('fifty_yin.csv', index=False)
+# %%
